@@ -1,6 +1,6 @@
 # owntracks to db
 
-Run an express server to receive locations from OwnTracks and log them in mongodb. No need for MQTT!
+Super simple - an express server to receive locations from OwnTracks and log them in mongodb. No need for MQTT!
 
 ### Repo Installation
 
