@@ -11,5 +11,5 @@ Use with PM2.
 
 - `npm install pm2 -g`
 - `pm2 startup` then run the code that results
-- `pm2 start app/app.js`
+- `pm2 start app/app.js --name owntracks_to_db`
 - `pm2 save`
