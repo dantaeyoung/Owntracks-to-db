@@ -1,0 +1,11 @@
+var config = {};
+
+config.webserver = {};
+config.webserver.port = 12000;
+
+config.database = {};
+config.database.name = "DATABASE_NAME"
+config.database.owntracks_collection = "owntracks"; //owntracks is a good default
+
+
+module.exports = config;

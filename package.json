@@ -1,0 +1,23 @@
+{
+  "name": "owntracks_to_db",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantaeyoung/owntracks_to_db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantaeyoung/owntracks_to_db/issues"
+  },
+  "homepage": "https://github.com/dantaeyoung/owntracks_to_db#readme",
+  "dependencies": {
+    "db": "^3.1.9",
+    "request": "^2.87.0"
+  }
+}
