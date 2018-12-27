@@ -2,10 +2,16 @@ var config = {};
 
 config.webserver = {};
 config.webserver.port = 12000;
+config.webserver.username = "username"
+config.webserver.password = "abc123"
 
 config.database = {};
-config.database.name = "DATABASE_NAME"
-config.database.owntracks_collection = "owntracks"; //owntracks is a good default
+config.database.owntracks_collection = "owntracks";
+config.database.host= "ipipip";
+config.database.port = "27017";
+config.database.dbname = "instagay";
+config.database.user = "user";
+config.database.pwd = "pwd";
 
 
 module.exports = config;

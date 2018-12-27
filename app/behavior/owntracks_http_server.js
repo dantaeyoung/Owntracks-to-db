@@ -11,7 +11,10 @@ module.exports = function(config, abilities) {
   */
 
   webserver.post('/owntracks/publish', function (req, res) {
+
+    console.log("publish endpoint was hit...");
     if("_type" in req.body && req.body._type == "location") {
+      console.log("it's a location!");
       var location = {}
       location.acc = req.body.acc;
       location.alt = req.body.alt;
