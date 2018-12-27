@@ -8,24 +8,11 @@ module.exports = function(config) {
 
     var webserver = express();
 
-    var username = config.webserver.username;
-    var password = config.webserver.password;
-  var logger = function(req, res, next) {
-        console.log("GOT REQUEST !");
-//    console.log(req);
-        next(); // Passing the request to the next handler in the stack.
-  }
-  webserver.use(logger);
-
-
-
-/*
-    webserver.use(basicAuth({
-    //  "users": { config.webserver.username : config.webserver.password }
-      "users": { "abc": "123" } //username : password }
-    }));
-*/
-
+    var authsettings =  {};
+    authsettings.users = {};
+    authsettings.users[config.webserver.username] = config.webserver.password;
+    
+    webserver.use(basicAuth(authsettings));
 
       // Parse request bodies
     webserver.use(bodyParser.json());
