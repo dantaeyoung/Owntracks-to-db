@@ -22,8 +22,6 @@ function add_behaviors() {
 // this is messy.. TODO wrap all inits into single function
 abilities.database.init().then(() => {
   add_behaviors()
+  console.log("= RUNNING!");
 })
-
-console.log("= RUNNING!");
-
 
